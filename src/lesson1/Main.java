@@ -9,5 +9,12 @@ public class Main {
 
         System.out.println("Я \nХорошо \nЗнаю \nJava.");
 
+        // Задание 2
+        System.out.println("Задание 2");
+
+        double res1 = (46 + 10) * (10 / 3d);
+        System.out.println("Res1: " + res1);
+        int res2 = (29) * (4) * (-15);
+        System.out.println("Res2: " + res2);
 }
 }
