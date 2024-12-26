@@ -16,5 +16,14 @@ public class Main {
         System.out.println("Res1: " + res1);
         int res2 = (29) * (4) * (-15);
         System.out.println("Res2: " + res2);
+
+        // Задание 3
+        System.out.println("Задание 3");
+
+        double number = 10500;
+        double result = (number / 10) / 10;
+
+        System.out.println("Результат выражения с переменной number: " + result);
+
 }
 }
