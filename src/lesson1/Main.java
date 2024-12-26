@@ -37,8 +37,7 @@ public class Main {
         System.out.println("Произведение трех чисел: " + result);
 
         // Задание 5
-        System.out.println("Task 5");
-
+        System.out.println("Task 5. Введите ниже три целых числа:");
 
         Scanner scanner = new Scanner(System.in);
         scanner.hasNextInt();
@@ -48,6 +47,23 @@ public class Main {
         scanner.hasNextInt();
         int input2 = scanner.nextInt();
         System.out.println(input + "\n" + input1 + "\n" + input2);
+
+        // Задание 6
+        System.out.println("Task 6. Введите ниже целое число:");
+
+        Scanner scanner1 = new Scanner(System.in);
+
+        int b1 = scanner1.nextInt();
+
+        if (b1 % 2 != 0) {
+            System.out.println("Нечетное");
+        } else if (b1 % 2 == 0 && b1 > 100) {
+            System.out.println("Выход за пределы диапазона");
+        } else {
+            System.out.println("Четное");
+        }
+
+        scanner1.close();
 
     }
 }
