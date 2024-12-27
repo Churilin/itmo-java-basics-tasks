@@ -65,5 +65,7 @@ public class Main {
 
         scanner1.close();
 
+        System.out.println("Test new branch");
+
     }
 }
