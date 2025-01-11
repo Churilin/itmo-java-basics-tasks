@@ -4,16 +4,11 @@ package lesson4.TasksPart1;
 // появляется ли число 3 как первый или последний элемент массива целых чисел.
 // Длина массива должна быть больше или равна двум
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class arrayElement {
 
     public static void main(String[] args) {
-        checkArrayElement();
-    }
-
-    public static void checkArrayElement() {
         Scanner input = new Scanner(System.in);
         System.out.println("Введите длину массива:");
         int size = input.nextInt();
@@ -24,16 +19,15 @@ public class arrayElement {
             for (int i = 0; i < size; i++) {
                 array[i] = input.nextInt();
             }
+
+            boolean result = checkArrayElement(array);
+            System.out.println("Результат: " + result);
         } else {
             System.out.println("Длина массива должна быть больше или равна 2.");
         }
+    }
 
-        System.out.println("Массив: " + Arrays.toString(array));
-
-        if ((array[0] == 3) || array[size - 1] == 3) {
-            System.out.println("Результат: " + true);
-        } else {
-            System.out.println("Результат: " + false);
-        }
+    public static boolean checkArrayElement(int[] array) {
+        return (array[0] == 3) || array[array.length - 1] == 3;
     }
 }
