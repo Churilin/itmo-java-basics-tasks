@@ -5,8 +5,8 @@ package lesson5;
 public class wordPalindrome {
 
     public static void main(String[] args) {
-        String word = "ротор";
-        if (isPalindrome(word)) {
+        String word = "РотОР";
+        if (isPalindrome(word.toLowerCase())) {
             System.out.println(word + " - слово палиндром.");
         } else {
             System.out.println("слово: " + word + " - не является палиндромом.");
