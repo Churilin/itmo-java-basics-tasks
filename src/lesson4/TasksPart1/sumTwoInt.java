@@ -10,8 +10,9 @@ public class sumTwoInt {
     }
 
     static void checkSumEqInt() {
-        System.out.println("Введите первое число:");
         Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Введите первое число:");
         int num1 = scanner.nextInt();
 
         System.out.println("Введите второе число:");

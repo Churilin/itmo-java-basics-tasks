@@ -8,15 +8,13 @@ import java.util.Scanner;
 public class nextNumbIsBig {
 
     public static void main(String[] args) {
-
         checkMoreLess();
-
     }
 
     static void checkMoreLess() {
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Введите первое число:");
-        Scanner scanner = new Scanner(System.in);
         int num1 = scanner.nextInt();
 
         System.out.println("Введите второе число:");
@@ -25,11 +23,10 @@ public class nextNumbIsBig {
         System.out.println("Введите третье число:");
         int num3 = scanner.nextInt();
 
-        System.out.println("Result: " + check(num1, num2, num3));
+        System.out.println("Результат: " + check(num1, num2, num3));
     }
 
     public static Boolean check(int firstNum, int secondNum, int thirdNum) {
         return secondNum > firstNum && thirdNum > secondNum;
     }
-
 }
