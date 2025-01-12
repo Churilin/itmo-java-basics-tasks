@@ -18,17 +18,17 @@ public class censored {
                 "Какой он ужасный\n" +
                 "Бяка…»";
         System.out.println(text);
-        censored(text, "бяка");
+        censored(text, "бяка", "[вырезано цензурой]");
     }
 
-    public static void censored(String text, String censWord) {
+    public static void censored(String text, String censWord, String replacement) {
         if (text == null) {
             throw new IllegalArgumentException("Пустой текст");
         }
 
         text = text.toLowerCase();
 
-        text = text.replaceAll(censWord, "[вырезано цензурой]");
+        text = text.replaceAll(censWord, replacement);
         System.out.println(text);
     }
 }
