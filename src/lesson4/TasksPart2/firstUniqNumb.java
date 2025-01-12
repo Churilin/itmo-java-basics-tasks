@@ -8,10 +8,11 @@ public class firstUniqNumb {
 
     public static void main(String[] args) {
         int[] its = {4, 7, 4, 6, 1, 6};
-        findFirstUniqNumb(its);
+        int result = findFirstUniqNumb(its);
+        System.out.println("Первое уникальное число: " + result);
     }
 
-    public static void findFirstUniqNumb(int[] array) {
+    public static int findFirstUniqNumb(int[] array) {
         System.out.println("Для массива: " + Arrays.toString(array));
         int size = array.length;
         int firstUniqueNum = -1;
@@ -30,6 +31,6 @@ public class firstUniqNumb {
             }
         }
 
-        System.out.println("Первое уникальное число: " + firstUniqueNum);
+        return firstUniqueNum;
     }
 }
