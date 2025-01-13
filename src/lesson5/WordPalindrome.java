@@ -6,7 +6,7 @@ public class WordPalindrome {
 
     public static void main(String[] args) {
         String word = "РотОР";
-        if (isPalindrome(word.toLowerCase())) {
+        if (isPalindrome(word)) {
             System.out.println(word + " - слово палиндром.");
         } else {
             System.out.println("слово: " + word + " - не является палиндромом.");
@@ -14,6 +14,7 @@ public class WordPalindrome {
     }
 
     public static boolean isPalindrome(String word) {
+        word = word.toLowerCase();
         int left = 0;
         int right = word.length() - 1;
         while (left < right) {

@@ -1,11 +1,10 @@
 package lesson5;
 
-// Напишите метод, заменяющий в тексте все вхождения слова «бяка» на «[вырезано цензурой]».
+ // Напишите метод, заменяющий в тексте все вхождения слова «бяка» на «[вырезано цензурой]».
 
 public class Censored {
-
     public static void main(String[] args) {
-        String text = "Встретились Бяка и Бука.\n" +
+        String str = "Встретились Бяка и Бука.\n" +
                 "Никто не издал ни звука.\n" +
                 "Никто не подал и знака —\n" +
                 "Молчали Бука и Бяка.\n" +
@@ -17,18 +16,18 @@ public class Censored {
                 "«Однако\n" +
                 "Какой он ужасный\n" +
                 "Бяка…»";
-        System.out.println(text);
-        censored(text, "бяка", "[вырезано цензурой]");
+        System.out.println(censorReplace(str, "бяка"));
     }
 
-    public static void censored(String text, String censWord, String replacement) {
-        if (text == null) {
-            throw new IllegalArgumentException("Пустой текст");
+    public static String censorReplace(String text,  String badWord) {
+        char[] badWordLower = badWord.toLowerCase().toCharArray();
+        char[] badWordUpper = badWord.toUpperCase().toCharArray();
+        String regEx = "\\b";
+        for (int i = 0; i < badWordLower.length; i++) {
+            regEx += "[" + badWordLower[i] + badWordUpper[i] + "]";
         }
-
-//        text = text.toLowerCase();
-
-        text = text.replaceAll(censWord, replacement);
-        System.out.println(text);
+        regEx += "([А-Яа-я]{0,3})\\b";
+        text = text.replaceAll(regEx, "[вырезано цензурой]");
+        return text;
     }
 }
