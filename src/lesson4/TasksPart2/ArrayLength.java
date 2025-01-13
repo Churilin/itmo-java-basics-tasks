@@ -6,7 +6,7 @@ package lesson4.TasksPart2;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class arrayLength {
+public class ArrayLength {
     public static void main(String[] args) {
         getAndPrintArray();
     }

@@ -4,7 +4,7 @@ package lesson4.TasksPart1;
 
 import java.util.Scanner;
 
-public class containsOneOrThree {
+public class ContainsOneOrThree {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);

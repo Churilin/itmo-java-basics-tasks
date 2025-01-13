@@ -1,17 +1,15 @@
 package lesson4.TasksPart1;
 
-// Напишите программу, которая принимает от пользователя три целых числа и возвращает true,
-// если второе число больше первого числа, а третье число больше второго числа
+// Напишите программу, чтобы вычислить сумму двух целых чисел и вернуть true, если сумма равна третьему целому числу
 
 import java.util.Scanner;
 
-public class nextNumbIsBig {
-
+public class SumTwoInt {
     public static void main(String[] args) {
-        checkMoreLess();
+        checkSumEqInt();
     }
 
-    static void checkMoreLess() {
+    static void checkSumEqInt() {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Введите первое число:");
@@ -27,6 +25,6 @@ public class nextNumbIsBig {
     }
 
     public static Boolean check(int firstNum, int secondNum, int thirdNum) {
-        return secondNum > firstNum && thirdNum > secondNum;
+        return firstNum + secondNum == thirdNum;
     }
 }

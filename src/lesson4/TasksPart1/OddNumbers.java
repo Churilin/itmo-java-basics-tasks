@@ -2,7 +2,7 @@ package lesson4.TasksPart1;
 
 // программа, которая выводит на консоль нечетные числа от 1 до 99
 
-public class oddNumbers {
+public class OddNumbers {
     public static void main(String[] args) {
         printOdd(1, 99);
 }

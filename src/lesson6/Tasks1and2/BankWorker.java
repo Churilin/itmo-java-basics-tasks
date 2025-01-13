@@ -4,12 +4,12 @@ package lesson6.Tasks1and2;
 //Создайте несколько классов: класс Работник банка
 //В класс Работник банка добавьте: наследование класса Человек
 
-public class bankWorker extends human implements information {
+public class BankWorker extends Human implements Information {
     //строковое поле «название банка»
     private final String bankName;
 
     //конструктор для установки всех значений
-    public bankWorker(String firstName, String lastName, String bankName) {
+    public BankWorker(String firstName, String lastName, String bankName) {
         super(firstName, lastName);
         this.bankName = bankName;
     }

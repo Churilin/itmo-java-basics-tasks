@@ -2,7 +2,7 @@ package lesson5;
 
 // Напишите метод, который инвертирует слова в строке. Предполагается, что в строке нет знаков препинания, и слова разделены пробелами.
 
-public class wordInverter {
+public class WordInverter {
     public static void main(String[] args) {
         String inputString = "This is a test string";
         System.out.println("The given string is: " + inputString + "\n"

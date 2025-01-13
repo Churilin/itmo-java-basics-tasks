@@ -2,12 +2,12 @@ package lesson6.Tasks1and2;
 
 //Абстрактные классы. Создайте несколько классов: абстрактный класс Человек;
 
-public abstract class human {
+public abstract class Human {
     private final String firstName;
     private final String lastName;
 
     //конструктор для установки значений
-    public human(String firstName, String lastName) {
+    public Human(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
     }

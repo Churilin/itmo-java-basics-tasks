@@ -2,7 +2,7 @@ package lesson5;
 
 // Написать метод для поиска самого длинного слова в тексте.
 
-public class longWord {
+public class LongWord {
 
     public static void main(String[] args) {
         String text = "Разнообразный и богатый опыт говорит нам, " +

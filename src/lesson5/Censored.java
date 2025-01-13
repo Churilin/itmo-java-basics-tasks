@@ -2,7 +2,7 @@ package lesson5;
 
 // Напишите метод, заменяющий в тексте все вхождения слова «бяка» на «[вырезано цензурой]».
 
-public class censored {
+public class Censored {
 
     public static void main(String[] args) {
         String text = "Встретились Бяка и Бука.\n" +
@@ -26,7 +26,7 @@ public class censored {
             throw new IllegalArgumentException("Пустой текст");
         }
 
-        text = text.toLowerCase();
+//        text = text.toLowerCase();
 
         text = text.replaceAll(censWord, replacement);
         System.out.println(text);

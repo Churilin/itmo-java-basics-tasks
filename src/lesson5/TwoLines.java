@@ -2,7 +2,7 @@ package lesson5;
 
 // Имеются две строки. Найти количество вхождений одной (являющейся подстрокой) в другую.
 
-public class twoLines {
+public class TwoLines {
 
     public static void main(String[] args) {
         String mainStr = "Наши поезда — самые поездатые поезда в мире, " +

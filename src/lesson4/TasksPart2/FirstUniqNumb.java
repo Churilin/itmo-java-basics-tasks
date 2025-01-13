@@ -4,7 +4,7 @@ package lesson4.TasksPart2;
 
 import java.util.Arrays;
 
-public class firstUniqNumb {
+public class FirstUniqNumb {
 
     public static void main(String[] args) {
         int[] its = {4, 7, 4, 6, 1, 6};

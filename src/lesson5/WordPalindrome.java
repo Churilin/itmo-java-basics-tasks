@@ -2,7 +2,7 @@ package lesson5;
 
 // Написать метод, который проверяет является ли слово палиндромом.
 
-public class wordPalindrome {
+public class WordPalindrome {
 
     public static void main(String[] args) {
         String word = "РотОР";

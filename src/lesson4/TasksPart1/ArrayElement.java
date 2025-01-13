@@ -6,7 +6,7 @@ package lesson4.TasksPart1;
 
 import java.util.Scanner;
 
-public class arrayElement {
+public class ArrayElement {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);

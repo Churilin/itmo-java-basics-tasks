@@ -5,7 +5,7 @@ package lesson4.TasksPart2;
 import java.util.Arrays;
 import java.util.Random;
 
-public class randArray {
+public class RandArray {
 
     // С помощью метода generateRandomArray генерируется случайный массив чисел.
     // Для генерации случайных чисел заданы параметры:

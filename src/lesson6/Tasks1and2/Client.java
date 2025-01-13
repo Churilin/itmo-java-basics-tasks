@@ -3,13 +3,13 @@ package lesson6.Tasks1and2;
 // Абстрактные классы. Создайте несколько классов: класс Клиент;
 // В класс Клиент добавьте: наследование класса Человек;
 
-public class client extends human implements information {
+public class Client extends Human implements Information {
 
     //строковое поле «название банка»
     private final String bankName;
 
     //конструктор для установки всех значений
-    public client(String firstName, String lastName, String bankName) {
+    public Client(String firstName, String lastName, String bankName) {
         super(firstName, lastName);
         this.bankName = bankName;
     }

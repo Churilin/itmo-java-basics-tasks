@@ -4,7 +4,7 @@ package lesson4.TasksPart2;
 // Если он отсортирован по возрастанию то выводится “OK”, если нет, то будет выводиться текст “Please, try again”
 
 
-public class sortArray {
+public class SortArray {
 
     public static void main(String[] args) {
         int[] its = {2, 10, 12, 64, 367, 439};

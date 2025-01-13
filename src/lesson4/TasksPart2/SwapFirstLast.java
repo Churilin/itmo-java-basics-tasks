@@ -4,7 +4,7 @@ package lesson4.TasksPart2;
 
 import java.util.Arrays;
 
-public class swapFirstLast {
+public class SwapFirstLast {
     public static void main(String[] args) {
         int[] array1 = {5, 6, 7, 2};
         System.out.println("Array 1: " + Arrays.toString(array1));
