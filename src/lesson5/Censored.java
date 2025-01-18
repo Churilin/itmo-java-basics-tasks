@@ -3,6 +3,9 @@ package lesson5;
  // Напишите метод, заменяющий в тексте все вхождения слова «бяка» на «[вырезано цензурой]».
 
 public class Censored {
+
+    private static final String censored = "[вырезано цензурой]";
+
     public static void main(String[] args) {
         String str = "Встретились Бяка и Бука.\n" +
                 "Никто не издал ни звука.\n" +
@@ -27,7 +30,7 @@ public class Censored {
             regEx += "[" + badWordLower[i] + badWordUpper[i] + "]";
         }
         regEx += "([А-Яа-я]{0,3})\\b";
-        text = text.replaceAll(regEx, "[вырезано цензурой]");
+        text = text.replaceAll(regEx, censored);
         return text;
     }
 }
