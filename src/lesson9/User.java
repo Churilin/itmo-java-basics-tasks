@@ -62,7 +62,7 @@ public class User {
         return userMap;
     }
 
-    public static void showUserPoint (Map<User, Integer> userMap) {
+    public static Map<User, Integer> showUserPoint (Map<User, Integer> userMap) {
         System.out.println("Введите имя пользователя: ");
         try (Scanner scanner = new Scanner(System.in)) {
             String name = scanner.nextLine();
@@ -79,6 +79,8 @@ public class User {
             } else {
                 System.out.println("У пользователя " + name + " - " + userMap.get(thisUser) + " очко(в).");
             }
+
+            return userMap;
         }
     }
 
